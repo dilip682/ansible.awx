@@ -25,3 +25,9 @@ echo "###"
 sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
+
+# docker-py install script.
+sudo pip install docker-py
+
+# Assign docker group membership to user. Else you will receive docker.sock: connect: permission denied
+sudo usermod -a -G docker $USER

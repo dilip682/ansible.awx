@@ -1,7 +1,5 @@
 # Docker install script.
 # Use at your own risk! This was taken from the official docs.
-
-
 sudo apt-get update -y
 sudo apt-get install -y \
     apt-transport-https \
